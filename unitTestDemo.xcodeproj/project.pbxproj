@@ -21,6 +21,7 @@
 		0F672AFD19CBF6EC00C777D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F672ADF19CBF6EC00C777D1 /* UIKit.framework */; };
 		0F672B0519CBF6EC00C777D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F672B0319CBF6EC00C777D1 /* InfoPlist.strings */; };
 		0F672B0719CBF6EC00C777D1 /* unitTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F672B0619CBF6EC00C777D1 /* unitTestDemoTests.m */; };
+		0F672B1219CBF8BC00C777D1 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F672B1119CBF8BC00C777D1 /* Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		0F672B0219CBF6EC00C777D1 /* unitTestDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "unitTestDemoTests-Info.plist"; sourceTree = "<group>"; };
 		0F672B0419CBF6EC00C777D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0F672B0619CBF6EC00C777D1 /* unitTestDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unitTestDemoTests.m; sourceTree = "<group>"; };
+		0F672B1019CBF8BB00C777D1 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = ../Model.h; sourceTree = "<group>"; };
+		0F672B1119CBF8BC00C777D1 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = ../Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 		0F672AE119CBF6EC00C777D1 /* unitTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0F672B1019CBF8BB00C777D1 /* Model.h */,
+				0F672B1119CBF8BC00C777D1 /* Model.m */,
 				0F672AEA19CBF6EC00C777D1 /* JSAppDelegate.h */,
 				0F672AEB19CBF6EC00C777D1 /* JSAppDelegate.m */,
 				0F672AED19CBF6EC00C777D1 /* Main.storyboard */,
@@ -253,6 +258,7 @@
 				0F672AE819CBF6EC00C777D1 /* main.m in Sources */,
 				0F672AF219CBF6EC00C777D1 /* JSViewController.m in Sources */,
 				0F672AEC19CBF6EC00C777D1 /* JSAppDelegate.m in Sources */,
+				0F672B1219CBF8BC00C777D1 /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

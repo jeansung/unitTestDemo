@@ -10,4 +10,10 @@
 
 @interface JSViewController : UIViewController
 
+@property(weak, nonatomic) IBOutlet UITextField* celsiusValueTextField;
+@property(weak, nonatomic) IBOutlet UILabel* farenheitValueLabel;
+
+-(IBAction)celsiusValueEntered:(id)sender;
+
+
 @end

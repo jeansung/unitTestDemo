@@ -7,8 +7,11 @@
 //
 
 #import "JSViewController.h"
+#import "Model.h"
 
-@interface JSViewController ()
+@interface JSViewController () {
+    Model* model;
+}
 
 @end
 
@@ -18,6 +21,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    model = [[Model alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +30,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)celsiusValueEntered:(id)sender
+{
+    int fahrenheit = [model convertToFarenheit:[self.celsiusValueTextField.text integerValue]];
+    self.farenheitValueLabel.text = [NSString stringWithFormat:@"%d", fahrenheit];
+}
 @end
